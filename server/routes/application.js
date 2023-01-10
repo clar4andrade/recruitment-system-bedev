@@ -1,8 +1,14 @@
-//const express = require('express')
+const express = require('express')
+const { sendApplication, getApplication } = require('../controllers/applicationController')
 
-//post user application
-//router.post(':id')
+const router = express.Router()
 
-//router.get(':id', getUser)
+//post application route
+router.post('/', sendApplication)
 
-//module.exports = router
+//get user profile
+router.get('/:id', getApplication)
+
+
+
+module.exports = router
