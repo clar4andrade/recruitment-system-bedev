@@ -10,7 +10,7 @@ router.post('/signup', userSignup)
 router.post('/login', userLogin)
 
 //get user profile
-router.get(':id', getUser)
+router.get('/id/:id', getUser)
 
 
 
